@@ -1,0 +1,2 @@
+class Hydro(object):
+    pass
