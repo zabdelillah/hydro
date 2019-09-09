@@ -3,7 +3,7 @@ hydro.core.menu is the class that controls hydro-related menu items around an at
 user will have the ability to interact with an object of a given context, with tasks that are able to accept and work
 with those contexts.
 '''
-from hydro import Hydro
+from hydro.core.hydro_core import Hydro
 
 class HydroMenu(Hydro):
     pass

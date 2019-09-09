@@ -3,4 +3,4 @@ hydro.core is the core python module for hydro. All functions and classes relate
 class.
 '''
 
-from hydro import Hydro
+from .hydro_core import Hydro
