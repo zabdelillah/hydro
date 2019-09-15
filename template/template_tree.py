@@ -6,7 +6,7 @@ HydroTemplateObject items to represent each individual item, and organising the 
 import copy
 import os
 import yaml
-from template_item import HydroTemplateObject
+from .template_item import HydroTemplateObject
 
 class HydroTemplateSchemaFileNotSpecifiedException(Exception):
     '''
