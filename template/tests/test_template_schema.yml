@@ -1,0 +1,32 @@
+root:
+  - sequences:
+      preserve: yes
+      children:
+        - sequence:
+          - shot:
+            - elements:
+                preserve: yes
+                children:
+                  - element_type:
+                      - element_directory:
+                          naming: '{sequence}_{shot}_{element_type}_{element_name}_v{version:03}'
+                          children:
+                            - element:
+                                type: file
+                                naming: '{sequence}_{shot}_{element_type}_{element_name}_v{version:03}.{frame}.{ext}'
+            - step:
+              - work:
+                  preserve: yes
+                  children:
+                    - engine_name:
+                        - scenes:
+                            preserve: yes
+                            children:
+                              - scene:
+                                  naming: '{sequence}_{shot}_{step}_v{version:03}.{ext}'
+              - review:
+                  preserve: yes
+                  children:
+                    - daily:
+                        type: file
+                        naming: '{sequence}_{shot}_{step}_v{version:03}.{ext}'
